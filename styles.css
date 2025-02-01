@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 10px;
+}
+nav ul {
+    display: flex;
+    background: #333;
+    padding: 10px;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+img {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+.grid-container img:nth-child(odd) {
+    border-radius: 20px;
+}
